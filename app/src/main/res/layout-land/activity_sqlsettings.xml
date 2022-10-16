@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Sqlsettings">
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="222dp"
+        android:layout_height="213dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="110dp">
+
+        <EditText
+            android:id="@+id/editTextServerip"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:hint="Server ip örn:127.0.0.1"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editTextInstance"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:hint="instance örn:SQLEXPRESS"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editTextPort"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:hint="Port örn:1433"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editTextDatabasename"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Veritabanı Adı örn:TESTDB"
+            android:inputType="textPersonName"
+            android:minHeight="48dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="197dp"
+        android:layout_height="213dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="348dp">
+
+        <EditText
+            android:id="@+id/editTextUser"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:hint="User örn:sa"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:hint="Password örn:123456"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/btnCheck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Check" />
+
+        <Button
+            android:id="@+id/btnKaydet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="btnsave"
+            android:text="Kaydet" />
+
+    </LinearLayout>
+
+</LinearLayout>
